@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55AB8D901D0637A7004617A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8D8F1D0637A7004617A2 /* AppDelegate.swift */; };
+		55AB8D921D0637A7004617A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8D911D0637A7004617A2 /* ViewController.swift */; };
+		55AB8D941D0637A7004617A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55AB8D931D0637A7004617A2 /* Assets.xcassets */; };
+		55AB8D971D0637A7004617A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55AB8D951D0637A7004617A2 /* Main.storyboard */; };
+		55AB8DA21D0637A7004617A2 /* FinderHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8DA11D0637A7004617A2 /* FinderHashTests.swift */; };
+		55AB8DB51D0637DD004617A2 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8DB41D0637DD004617A2 /* FinderSync.swift */; };
+		55AB8DB91D0637DD004617A2 /* HashClick.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 55AB8DB01D0637DD004617A2 /* HashClick.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		55AB8DC41D069163004617A2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8DC31D069163004617A2 /* Defaults.swift */; };
+		55AB8DC61D069397004617A2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8DC31D069163004617A2 /* Defaults.swift */; };
+		55AB8DD01D06A347004617A2 /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AB8DCF1D06A347004617A2 /* libSystem.tbd */; };
+		55AB8DD11D06A34E004617A2 /* libSystem.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 55AB8DCF1D06A347004617A2 /* libSystem.tbd */; };
+		55AB8DD31D06A37B004617A2 /* Hasher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB8DD21D06A37B004617A2 /* Hasher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55AB8D9E1D0637A7004617A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55AB8D841D0637A7004617A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AB8D8B1D0637A7004617A2;
+			remoteInfo = FinderHash;
+		};
+		55AB8DB71D0637DD004617A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55AB8D841D0637A7004617A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AB8DAF1D0637DD004617A2;
+			remoteInfo = HashClick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55AB8DBD1D0637DD004617A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55AB8DB91D0637DD004617A2 /* HashClick.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55AB8D8C1D0637A7004617A2 /* FinderHash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinderHash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AB8D8F1D0637A7004617A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55AB8D911D0637A7004617A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55AB8D931D0637A7004617A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55AB8D961D0637A7004617A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55AB8D981D0637A7004617A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AB8D9D1D0637A7004617A2 /* FinderHashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinderHashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AB8DA11D0637A7004617A2 /* FinderHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderHashTests.swift; sourceTree = "<group>"; };
+		55AB8DA31D0637A7004617A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AB8DB01D0637DD004617A2 /* HashClick.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HashClick.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AB8DB31D0637DD004617A2 /* HashClick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HashClick.entitlements; sourceTree = "<group>"; };
+		55AB8DB41D0637DD004617A2 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
+		55AB8DB61D0637DD004617A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AB8DC31D069163004617A2 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		55AB8DC51D069303004617A2 /* FinderHash.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FinderHash.entitlements; sourceTree = "<group>"; };
+		55AB8DC91D06A25C004617A2 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
+		55AB8DCB1D06A291004617A2 /* FinderHash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FinderHash-Bridging-Header.h"; sourceTree = "<group>"; };
+		55AB8DCF1D06A347004617A2 /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
+		55AB8DD21D06A37B004617A2 /* Hasher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hasher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55AB8D891D0637A7004617A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8DD01D06A347004617A2 /* libSystem.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8D9A1D0637A7004617A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8DAD1D0637DD004617A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8DD11D06A34E004617A2 /* libSystem.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55AB8D831D0637A7004617A2 = {
+			isa = PBXGroup;
+			children = (
+				55AB8DCF1D06A347004617A2 /* libSystem.tbd */,
+				55AB8DC91D06A25C004617A2 /* libcommonCrypto.tbd */,
+				55AB8D8E1D0637A7004617A2 /* FinderHash */,
+				55AB8DA01D0637A7004617A2 /* FinderHashTests */,
+				55AB8DB11D0637DD004617A2 /* HashClick */,
+				55AB8D8D1D0637A7004617A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55AB8D8D1D0637A7004617A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8D8C1D0637A7004617A2 /* FinderHash.app */,
+				55AB8D9D1D0637A7004617A2 /* FinderHashTests.xctest */,
+				55AB8DB01D0637DD004617A2 /* HashClick.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55AB8D8E1D0637A7004617A2 /* FinderHash */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8DC51D069303004617A2 /* FinderHash.entitlements */,
+				55AB8D8F1D0637A7004617A2 /* AppDelegate.swift */,
+				55AB8D911D0637A7004617A2 /* ViewController.swift */,
+				55AB8DC31D069163004617A2 /* Defaults.swift */,
+				55AB8D931D0637A7004617A2 /* Assets.xcassets */,
+				55AB8D951D0637A7004617A2 /* Main.storyboard */,
+				55AB8D981D0637A7004617A2 /* Info.plist */,
+				55AB8DCB1D06A291004617A2 /* FinderHash-Bridging-Header.h */,
+			);
+			path = FinderHash;
+			sourceTree = "<group>";
+		};
+		55AB8DA01D0637A7004617A2 /* FinderHashTests */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8DA11D0637A7004617A2 /* FinderHashTests.swift */,
+				55AB8DA31D0637A7004617A2 /* Info.plist */,
+			);
+			path = FinderHashTests;
+			sourceTree = "<group>";
+		};
+		55AB8DB11D0637DD004617A2 /* HashClick */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8DB41D0637DD004617A2 /* FinderSync.swift */,
+				55AB8DD21D06A37B004617A2 /* Hasher.swift */,
+				55AB8DB61D0637DD004617A2 /* Info.plist */,
+				55AB8DB21D0637DD004617A2 /* Supporting Files */,
+			);
+			path = HashClick;
+			sourceTree = "<group>";
+		};
+		55AB8DB21D0637DD004617A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55AB8DB31D0637DD004617A2 /* HashClick.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55AB8D8B1D0637A7004617A2 /* FinderHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AB8DA61D0637A7004617A2 /* Build configuration list for PBXNativeTarget "FinderHash" */;
+			buildPhases = (
+				55AB8D881D0637A7004617A2 /* Sources */,
+				55AB8D891D0637A7004617A2 /* Frameworks */,
+				55AB8D8A1D0637A7004617A2 /* Resources */,
+				55AB8DBD1D0637DD004617A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AB8DB81D0637DD004617A2 /* PBXTargetDependency */,
+			);
+			name = FinderHash;
+			productName = FinderHash;
+			productReference = 55AB8D8C1D0637A7004617A2 /* FinderHash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55AB8D9C1D0637A7004617A2 /* FinderHashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AB8DA91D0637A7004617A2 /* Build configuration list for PBXNativeTarget "FinderHashTests" */;
+			buildPhases = (
+				55AB8D991D0637A7004617A2 /* Sources */,
+				55AB8D9A1D0637A7004617A2 /* Frameworks */,
+				55AB8D9B1D0637A7004617A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AB8D9F1D0637A7004617A2 /* PBXTargetDependency */,
+			);
+			name = FinderHashTests;
+			productName = FinderHashTests;
+			productReference = 55AB8D9D1D0637A7004617A2 /* FinderHashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55AB8DAF1D0637DD004617A2 /* HashClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AB8DBA1D0637DD004617A2 /* Build configuration list for PBXNativeTarget "HashClick" */;
+			buildPhases = (
+				55AB8DAC1D0637DD004617A2 /* Sources */,
+				55AB8DAD1D0637DD004617A2 /* Frameworks */,
+				55AB8DAE1D0637DD004617A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HashClick;
+			productName = HashClick;
+			productReference = 55AB8DB01D0637DD004617A2 /* HashClick.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55AB8D841D0637A7004617A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Chuquimian Productions";
+				TargetAttributes = {
+					55AB8D8B1D0637A7004617A2 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+					55AB8D9C1D0637A7004617A2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 55AB8D8B1D0637A7004617A2;
+					};
+					55AB8DAF1D0637DD004617A2 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 55AB8D871D0637A7004617A2 /* Build configuration list for PBXProject "FinderHash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55AB8D831D0637A7004617A2;
+			productRefGroup = 55AB8D8D1D0637A7004617A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55AB8D8B1D0637A7004617A2 /* FinderHash */,
+				55AB8D9C1D0637A7004617A2 /* FinderHashTests */,
+				55AB8DAF1D0637DD004617A2 /* HashClick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55AB8D8A1D0637A7004617A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8D941D0637A7004617A2 /* Assets.xcassets in Resources */,
+				55AB8D971D0637A7004617A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8D9B1D0637A7004617A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8DAE1D0637DD004617A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55AB8D881D0637A7004617A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8DC41D069163004617A2 /* Defaults.swift in Sources */,
+				55AB8D921D0637A7004617A2 /* ViewController.swift in Sources */,
+				55AB8D901D0637A7004617A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8D991D0637A7004617A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8DA21D0637A7004617A2 /* FinderHashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB8DAC1D0637DD004617A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AB8DB51D0637DD004617A2 /* FinderSync.swift in Sources */,
+				55AB8DC61D069397004617A2 /* Defaults.swift in Sources */,
+				55AB8DD31D06A37B004617A2 /* Hasher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55AB8D9F1D0637A7004617A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AB8D8B1D0637A7004617A2 /* FinderHash */;
+			targetProxy = 55AB8D9E1D0637A7004617A2 /* PBXContainerItemProxy */;
+		};
+		55AB8DB81D0637DD004617A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AB8DAF1D0637DD004617A2 /* HashClick */;
+			targetProxy = 55AB8DB71D0637DD004617A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55AB8D951D0637A7004617A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55AB8D961D0637A7004617A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55AB8DA41D0637A7004617A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55AB8DA51D0637A7004617A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		55AB8DA71D0637A7004617A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderHash/FinderHash.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FinderHash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinderHash/FinderHash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55AB8DA81D0637A7004617A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderHash/FinderHash.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = FinderHash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FinderHash/FinderHash-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		55AB8DAA1D0637A7004617A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderHashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinderHash.app/Contents/MacOS/FinderHash";
+			};
+			name = Debug;
+		};
+		55AB8DAB1D0637A7004617A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FinderHashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FinderHash.app/Contents/MacOS/FinderHash";
+			};
+			name = Release;
+		};
+		55AB8DBB1D0637DD004617A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HashClick/HashClick.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HashClick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHash.HashClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FinderHash/FinderHash-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		55AB8DBC1D0637DD004617A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HashClick/HashClick.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HashClick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chuquimianproductions.FinderHash.HashClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FinderHash/FinderHash-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55AB8D871D0637A7004617A2 /* Build configuration list for PBXProject "FinderHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AB8DA41D0637A7004617A2 /* Debug */,
+				55AB8DA51D0637A7004617A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AB8DA61D0637A7004617A2 /* Build configuration list for PBXNativeTarget "FinderHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AB8DA71D0637A7004617A2 /* Debug */,
+				55AB8DA81D0637A7004617A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AB8DA91D0637A7004617A2 /* Build configuration list for PBXNativeTarget "FinderHashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AB8DAA1D0637A7004617A2 /* Debug */,
+				55AB8DAB1D0637A7004617A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AB8DBA1D0637DD004617A2 /* Build configuration list for PBXNativeTarget "HashClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AB8DBB1D0637DD004617A2 /* Debug */,
+				55AB8DBC1D0637DD004617A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55AB8D841D0637A7004617A2 /* Project object */;
+}
